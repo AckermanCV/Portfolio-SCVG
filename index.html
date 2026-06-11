@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio — Sara Covadonga Valdés Gil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────── -->
+  <nav>
+    <span class="nav-logo">SCVG<span>.</span></span>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────── -->
+  <section id="inicio">
+    <div class="hero-inner">
+      <img class="avatar" src="/IMG20251231184033.jpg" alt="perfil">
+      <h1>Sara Covadonga Valdés Gil</h1>
+      <span class="role">Desarrollo de Aplicaciones Web · 1.º Curso DAW</span>
+      <p class="bio">
+        Estudiante apasionada por el desarrollo web y la experiencia de usuario.
+        Me interesa crear interfaces accesibles, bien diseñadas y funcionales,
+        donde la lógica y la creatividad trabajan juntas.
+      </p>
+    </div>
+
+    <!-- wave divider -->
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" width="100%" height="60">
+        <path fill="#ffffff" d="M0,40 C360,0 1080,70 1440,30 L1440,60 L0,60 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── SOBRE MÍ ──────────────────────────────────── -->
+  <section id="sobre-mi">
+    <div class="container">
+      <div class="sec-header">
+        <h2>Sobre mí</h2>
+        <span class="underline"></span>
+        <p>Un poco más sobre quién está detrás de la pantalla</p>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>
+            Hola, soy Sara Covadonga. Estudio el Ciclo Formativo de Grado Superior en
+            Desarrollo de Aplicaciones Web y me encuentro en el primer curso.
+            Desde pequeña me ha llamado la atención cómo funciona internet:
+            cómo una página en blanco se convierte en algo que miles de personas
+            pueden ver y usar.
+          </p>
+          <p>
+            Durante el ciclo he aprendido a trabajar tanto en el lado del cliente
+            como en el del servidor, y cada vez me interesa más el diseño de
+            interfaces accesibles y el código limpio y bien estructurado.
+          </p>
+          <h3>Intereses y tecnologías</h3>
+          <div class="tags">
+            <span class="tag">HTML &amp; CSS</span>
+            <span class="tag">JavaScript</span>
+            <!-- <span class="tag">PHP</span> -->
+            <span class="tag">Diseño UI</span>
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">Accesibilidad web</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>📋 Información</h3>
+          <div class="info-row"><span class="ico">🎓</span> DAW · 1.º Curso</div>
+          <div class="info-row"><span class="ico">📍</span> Las Palmas, Gran Canaria</div>
+          <div class="info-row"><span class="ico">💼</span> Buscando prácticas FCT</div>
+          <div class="info-row"><span class="ico">🌐</span> Español / Inglés B2</div>
+          <div class="info-row"><span class="ico">✨</span> Disponible para colaborar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROYECTOS ─────────────────────────────────── -->
+  <section id="proyectos">
+    <div class="container">
+      <div class="sec-header">
+        <h2>Proyectos</h2>
+        <span class="underline"></span>
+        <p>Trabajos realizados durante el ciclo formativo</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="card">
+          <span class="card-icon">🛒</span>
+          <h3>Tres en Ralla</h3>
+          <p>
+            Implementación del clásico juego de 3 en raya para dos jugadores en el mismo dispositivo. 
+            El tablero detecta automáticamente el turno de cada jugador, comprueba las condiciones de 
+            victoria en filas, columnas y diagonales, y muestra el resultado al finalizar la partida. 
+            Incluye botón de reinicio sin recargar la página.
+          </p>
+          <div class="tech-tags">
+            <span class="tech">JavaScript</span>
+            <!-- <span class="tech">CSS</span>
+            <span class="tech">Flexbox</span>
+            <span class="tech">Grid</span> -->
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">📰</span>
+          <h3>Pagina de Federaciones </h3>
+          <p>
+            Sitio web informativo para la consulta de federaciones del archipiélago canario. 
+            Permite explorar las distintas disciplinas, acceder a la información de contacto de cada 
+            federación y conocer las competiciones activas por isla. Diseño responsive adaptado a móvil y escritorio.
+          </p>
+          <div class="tech-tags">
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+            <span class="tech">JavaScript</span>
+            <span class="tech">JSON</span>
+          </div>
+        </article>
+
+        <!-- <article class="card">
+          <span class="card-icon">🎵</span>
+          <h3>MusicFlow — Gestor de Playlists</h3>
+          <p>
+            Aplicación web para gestionar listas de reproducción personalizadas.
+            Permite añadir, ordenar y buscar canciones. Los datos se guardan en
+            el navegador entre sesiones.
+          </p>
+          <div class="tech-tags">
+            <span class="tech">JavaScript</span>
+            <span class="tech">LocalStorage</span>
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+          </div>
+        </article> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ──────────────────────────────────── -->
+  <section id="contacto">
+    <div class="container">
+      <div class="sec-header">
+        <h2>Contacto</h2>
+        <span class="underline"></span>
+        <p>¿Tienes algún proyecto en mente? Hablemos.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Email</h3>
+          <a href="https://mail.google.com/">saracovadongavaldesgil@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/covadonga-vald%C3%A9s-243483388/">Sara Covadonga</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <h3>GitHub</h3>
+          <a href="https://github.com/AckermanCV">AckermanCV</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Ubicación</h3>
+          <p>Las Palmas, Gran Canaria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────── -->
+  <footer>
+    <p>© 2025 Sara Covadonga Valdés Gil · Hecho con <span>♥</span> usando solo HTML &amp; CSS</p>
+  </footer>
+
+</body>
+</html>
